@@ -1,6 +1,8 @@
 ### Weighted Sampling - Pytorch 0.4
 
-```print('Loading data...')
+```python
+
+print('Loading data...')
 train_dataset = datasets.ImageFolder(root=traindir,
                                  transform=transform_train)
 test_dataset = datasets.ImageFolder(root=valdir,
