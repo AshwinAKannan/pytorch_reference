@@ -1,4 +1,4 @@
-print('Loading data...')
+```print('Loading data...')
 train_dataset = datasets.ImageFolder(root=traindir,
                                  transform=transform_train)
 test_dataset = datasets.ImageFolder(root=valdir,
@@ -24,4 +24,4 @@ test_sampler = torch.utils.data.sampler.WeightedRandomSampler(test_samples_weigh
 
 train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=args.batch_size,sampler=train_sampler, **kwargs)
 val_loader = torch.utils.data.DataLoader(test_dataset, batch_size=args.batch_size, sampler=test_sampler, **kwargs)
-
+```
